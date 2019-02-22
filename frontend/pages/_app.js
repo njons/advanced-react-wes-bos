@@ -1,6 +1,7 @@
 // app wrapper enabled by next.js and apollo 
 
 import App, { Container } from 'next/app'; 
+import Page from '../components/Page';
 
 class MyApp extends App {
     /* MyApp lets state persist across page navigations */
@@ -8,12 +9,12 @@ class MyApp extends App {
         const { Component } = this.props;
         return (
             <Container>
-                <Component>
-                {this.props.children}
-                </Component>
+                <Page> 
+                    <Component />
+                </Page>
             </Container>
         );
     }
 }
 
-export default _app;
+export default MyApp;

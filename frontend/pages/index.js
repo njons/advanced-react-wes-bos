@@ -1,5 +1,5 @@
 // import React from "react";
-import Link from "next/link"
+// import Link from "next/link"
 
 // class Home extends React.Component {
 //     render() {
@@ -14,7 +14,6 @@ import Link from "next/link"
 const Home = props => (
     <div>
         <h1>Title of page: Home</h1>
-        <Link href="/sell"> Go to Sell</Link> 
     </div>
 )
 
