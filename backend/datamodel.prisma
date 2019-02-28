@@ -1,0 +1,20 @@
+# All changes to the prisma schema (src/generated/prisma.graphql) need to be deployed so that graphQL can stay up to date 
+# script: npm run deploy
+
+type User {
+  id: ID! @unique
+  name: String!
+  email: String!
+}
+
+type Item {
+  id: ID! @unique
+  title: String!
+  description: String!
+  image: String
+  largeImage: String!
+  price: Int
+  # createdAt: DateTime!
+  # updatedAt: DateTime!
+  # user: User!
+}

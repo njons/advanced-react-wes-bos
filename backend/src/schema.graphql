@@ -1,0 +1,25 @@
+# this is the file in which we will write our queries to extract info from the prisma API
+# it is the public facing API 
+
+# import * from './generated/prisma.graphql'
+
+type User {
+  id: ID!,
+  name: String!
+}
+
+type Mutation {
+  createItem(
+    title: String, 
+    description: String, 
+    price: Int, 
+    image: String, 
+    largeImage: String
+    ): Item!
+  hi: String!
+}
+
+type Query {
+  items: [Item]!
+}
+
