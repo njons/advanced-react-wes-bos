@@ -1,20 +1,9 @@
-// import React from "react";
-// import Link from "next/link"
-
-// class Home extends React.Component {
-//     render() {
-//         return (
-//         <div>
-//              <h1>Title of page: Home</h1>
-
-//         </div>
-//         )
-//     }
-// }
+import Items from "../components/Items"
 const Home = props => (
-    <div>
-        <h1>Title of page: Home</h1>
-    </div>
+  <div>
+    <h1>Title of page: Home</h1>
+    <Items />
+  </div>
 )
 
 
