@@ -32,7 +32,6 @@ export default class Items extends Component {
   render() {
     return (
       <Center>
-        <p>This is the items page where we request items from the prisma backend!</p>
         <Query query={ALL_ITEMS_QUERY}>
           {({ data, error, loading }) => {
             console.log(data)
